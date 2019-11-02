@@ -18,7 +18,10 @@ cache:
     - node_modules
 
 script:
--ng build --prod
+  -ng lint
+  -ng test --watch=false
+  -ng build --prod
+
 
 
 deploy:
